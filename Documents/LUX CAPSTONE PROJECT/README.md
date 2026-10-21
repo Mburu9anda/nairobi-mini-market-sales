@@ -16,8 +16,7 @@ The first two questions describe past sales. The third will be a simple forecast
 
 ## Milestone 1 files
 
-- `docs/milestone_1.md` — the problem, questions, success measures, data plan, and the source.
-- `data/raw/` — synthetic transactions that we have generated for our two branches, product and customers.
-- `data/reference/knbs_county_population_2019.csv` — public KNBS population context for Nairobi City and Kiambu counties.
-- `src/generate_data.py` — recreates the synthetic raw files which I have generated with a fixed random seed(42).
-- `src/check_milestone1.py` — checks the data is present, covers a year and links together correctly.
+- `docs/milestone_1.md` - the problem, questions, success measures, data plan, and the source.
+- `data/raw/` - synthetic transactions that we have generated for our two branches, product and customers.
+- `data/reference/knbs_county_population_2019.csv` - public KNBS population context for Nairobi City and Kiambu counties.
+- `src/generate_data.py` - recreates the synthetic raw files which I have generated with a fixed random seed(42).
