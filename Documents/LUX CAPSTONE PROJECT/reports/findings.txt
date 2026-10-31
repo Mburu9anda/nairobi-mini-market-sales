@@ -1,0 +1,5 @@
+1. Product: Maize flour 2kg led net sales at KES 68,823.00, with 387 units sold.
+2. Time pattern: 2025-12 was the strongest month (KES 37,034.75); 2025-02 was the weakest (KES 26,069.25). Average daily sales were highest on Wednesday and lowest on Sunday.
+3. Branch and county: Sample CBD Mini-Mart in Nairobi City had KES 192,003.50, 4.8% above the other branch. Each county has only one sample branch.
+4. Customer type: loyalty_member had the largest net sales share at 43.7%. Walk-in sales combine purchases without customer IDs.
+5. Receipt values: the median receipt was KES 246.25 and the average was KES 330.92; the higher average suggests a small number of larger receipts pull the average upward.

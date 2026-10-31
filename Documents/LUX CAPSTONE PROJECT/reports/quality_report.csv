@@ -1,0 +1,6 @@
+step,rows_before,rows_after,rows_removed,rows_combined,values_fixed_or_flagged,explanation
+Raw input,1548,1548,0,0,0,Loaded the transaction CSV; raw files stay unchanged.
+Type conversion,1548,1548,0,0,6192,"Parsed sale_date as a date and quantity, price, and promotion as numbers."
+Missing values,1548,1548,0,0,498,Filled 498 blank customer IDs as WALK_IN; removed 0 rows missing required details.
+Repeated receipt items,1548,1511,0,37,37,Combined matching items by summing quantity; all units were preserved.
+Outlier and range checks,1511,1511,0,0,0,"Removed rows outside quantity 1-100, price greater than KES 0 up to KES 100,000, or promotion 0-100%."

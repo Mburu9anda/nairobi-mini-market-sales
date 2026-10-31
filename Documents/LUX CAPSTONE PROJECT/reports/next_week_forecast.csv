@@ -1,0 +1,21 @@
+store_id,store_name,product_id,product_name,forecast_units,forecast_week_start
+S001,Sample CBD Mini-Mart,P001,Maize flour 2kg,2.5,2026-01-05
+S001,Sample CBD Mini-Mart,P002,Milk 1L,3.25,2026-01-05
+S001,Sample CBD Mini-Mart,P003,Bread loaf,3.25,2026-01-05
+S001,Sample CBD Mini-Mart,P004,Sugar 1kg,4.75,2026-01-05
+S001,Sample CBD Mini-Mart,P005,Cooking oil 1L,1.75,2026-01-05
+S001,Sample CBD Mini-Mart,P006,Eggs tray,2.75,2026-01-05
+S001,Sample CBD Mini-Mart,P007,Rice 2kg,2.5,2026-01-05
+S001,Sample CBD Mini-Mart,P008,Tea leaves 250g,1.0,2026-01-05
+S001,Sample CBD Mini-Mart,P009,Water 1.5L,2.0,2026-01-05
+S001,Sample CBD Mini-Mart,P010,Soap bar,0.0,2026-01-05
+S002,Sample Ruiru Mini-Mart,P001,Maize flour 2kg,5.0,2026-01-05
+S002,Sample Ruiru Mini-Mart,P002,Milk 1L,3.25,2026-01-05
+S002,Sample Ruiru Mini-Mart,P003,Bread loaf,3.5,2026-01-05
+S002,Sample Ruiru Mini-Mart,P004,Sugar 1kg,3.75,2026-01-05
+S002,Sample Ruiru Mini-Mart,P005,Cooking oil 1L,1.75,2026-01-05
+S002,Sample Ruiru Mini-Mart,P006,Eggs tray,1.25,2026-01-05
+S002,Sample Ruiru Mini-Mart,P007,Rice 2kg,1.75,2026-01-05
+S002,Sample Ruiru Mini-Mart,P008,Tea leaves 250g,0.25,2026-01-05
+S002,Sample Ruiru Mini-Mart,P009,Water 1.5L,1.0,2026-01-05
+S002,Sample Ruiru Mini-Mart,P010,Soap bar,0.75,2026-01-05

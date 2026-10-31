@@ -1,0 +1,221 @@
+week_start,store_name,product_name,units_sold,baseline_forecast,four_week_average_forecast,baseline_absolute_error,average_absolute_error
+2025-10-20,Sample CBD Mini-Mart,Maize flour 2kg,2,6.0,4.75,4.0,2.75
+2025-10-27,Sample CBD Mini-Mart,Maize flour 2kg,4,2.0,4.5,2.0,0.5
+2025-11-03,Sample CBD Mini-Mart,Maize flour 2kg,2,4.0,4.0,2.0,2.0
+2025-11-10,Sample CBD Mini-Mart,Maize flour 2kg,4,2.0,3.5,2.0,0.5
+2025-11-17,Sample CBD Mini-Mart,Maize flour 2kg,3,4.0,3.0,1.0,0.0
+2025-11-24,Sample CBD Mini-Mart,Maize flour 2kg,7,3.0,3.25,4.0,3.75
+2025-12-01,Sample CBD Mini-Mart,Maize flour 2kg,3,7.0,4.0,4.0,1.0
+2025-12-08,Sample CBD Mini-Mart,Maize flour 2kg,3,3.0,4.25,0.0,1.25
+2025-12-15,Sample CBD Mini-Mart,Maize flour 2kg,0,3.0,4.0,3.0,4.0
+2025-12-22,Sample CBD Mini-Mart,Maize flour 2kg,4,0.0,3.25,4.0,0.75
+2025-12-29,Sample CBD Mini-Mart,Maize flour 2kg,0,4.0,2.5,4.0,2.5
+2025-10-20,Sample CBD Mini-Mart,Milk 1L,4,10.0,7.0,6.0,3.0
+2025-10-27,Sample CBD Mini-Mart,Milk 1L,4,4.0,7.5,0.0,3.5
+2025-11-03,Sample CBD Mini-Mart,Milk 1L,3,4.0,7.5,1.0,4.5
+2025-11-10,Sample CBD Mini-Mart,Milk 1L,4,3.0,5.25,1.0,1.25
+2025-11-17,Sample CBD Mini-Mart,Milk 1L,6,4.0,3.75,2.0,2.25
+2025-11-24,Sample CBD Mini-Mart,Milk 1L,7,6.0,4.25,1.0,2.75
+2025-12-01,Sample CBD Mini-Mart,Milk 1L,4,7.0,5.0,3.0,1.0
+2025-12-08,Sample CBD Mini-Mart,Milk 1L,1,4.0,5.25,3.0,4.25
+2025-12-15,Sample CBD Mini-Mart,Milk 1L,6,1.0,4.5,5.0,1.5
+2025-12-22,Sample CBD Mini-Mart,Milk 1L,2,6.0,4.5,4.0,2.5
+2025-12-29,Sample CBD Mini-Mart,Milk 1L,1,2.0,3.25,1.0,2.25
+2025-10-20,Sample CBD Mini-Mart,Bread loaf,6,2.0,3.25,4.0,2.75
+2025-10-27,Sample CBD Mini-Mart,Bread loaf,6,6.0,3.75,0.0,2.25
+2025-11-03,Sample CBD Mini-Mart,Bread loaf,0,6.0,4.5,6.0,4.5
+2025-11-10,Sample CBD Mini-Mart,Bread loaf,3,0.0,3.5,3.0,0.5
+2025-11-17,Sample CBD Mini-Mart,Bread loaf,5,3.0,3.75,2.0,1.25
+2025-11-24,Sample CBD Mini-Mart,Bread loaf,3,5.0,3.5,2.0,0.5
+2025-12-01,Sample CBD Mini-Mart,Bread loaf,7,3.0,2.75,4.0,4.25
+2025-12-08,Sample CBD Mini-Mart,Bread loaf,2,7.0,4.5,5.0,2.5
+2025-12-15,Sample CBD Mini-Mart,Bread loaf,1,2.0,4.25,1.0,3.25
+2025-12-22,Sample CBD Mini-Mart,Bread loaf,3,1.0,3.25,2.0,0.25
+2025-12-29,Sample CBD Mini-Mart,Bread loaf,5,3.0,3.25,2.0,1.75
+2025-10-20,Sample CBD Mini-Mart,Sugar 1kg,7,5.0,2.75,2.0,4.25
+2025-10-27,Sample CBD Mini-Mart,Sugar 1kg,2,7.0,4.25,5.0,2.25
+2025-11-03,Sample CBD Mini-Mart,Sugar 1kg,4,2.0,3.75,2.0,0.25
+2025-11-10,Sample CBD Mini-Mart,Sugar 1kg,4,4.0,4.5,0.0,0.5
+2025-11-17,Sample CBD Mini-Mart,Sugar 1kg,0,4.0,4.25,4.0,4.25
+2025-11-24,Sample CBD Mini-Mart,Sugar 1kg,4,0.0,2.5,4.0,1.5
+2025-12-01,Sample CBD Mini-Mart,Sugar 1kg,2,4.0,3.0,2.0,1.0
+2025-12-08,Sample CBD Mini-Mart,Sugar 1kg,5,2.0,2.5,3.0,2.5
+2025-12-15,Sample CBD Mini-Mart,Sugar 1kg,4,5.0,2.75,1.0,1.25
+2025-12-22,Sample CBD Mini-Mart,Sugar 1kg,8,4.0,3.75,4.0,4.25
+2025-12-29,Sample CBD Mini-Mart,Sugar 1kg,1,8.0,4.75,7.0,3.75
+2025-10-20,Sample CBD Mini-Mart,Cooking oil 1L,0,0.0,2.25,0.0,2.25
+2025-10-27,Sample CBD Mini-Mart,Cooking oil 1L,3,0.0,1.75,3.0,1.25
+2025-11-03,Sample CBD Mini-Mart,Cooking oil 1L,2,3.0,1.0,1.0,1.0
+2025-11-10,Sample CBD Mini-Mart,Cooking oil 1L,0,2.0,1.25,2.0,1.25
+2025-11-17,Sample CBD Mini-Mart,Cooking oil 1L,0,0.0,1.25,0.0,1.25
+2025-11-24,Sample CBD Mini-Mart,Cooking oil 1L,5,0.0,1.25,5.0,3.75
+2025-12-01,Sample CBD Mini-Mart,Cooking oil 1L,3,5.0,1.75,2.0,1.25
+2025-12-08,Sample CBD Mini-Mart,Cooking oil 1L,0,3.0,2.0,3.0,2.0
+2025-12-15,Sample CBD Mini-Mart,Cooking oil 1L,0,0.0,2.0,0.0,2.0
+2025-12-22,Sample CBD Mini-Mart,Cooking oil 1L,4,0.0,2.0,4.0,2.0
+2025-12-29,Sample CBD Mini-Mart,Cooking oil 1L,0,4.0,1.75,4.0,1.75
+2025-10-20,Sample CBD Mini-Mart,Eggs tray,0,0.0,1.0,0.0,1.0
+2025-10-27,Sample CBD Mini-Mart,Eggs tray,0,0.0,0.5,0.0,0.5
+2025-11-03,Sample CBD Mini-Mart,Eggs tray,2,0.0,0.0,2.0,2.0
+2025-11-10,Sample CBD Mini-Mart,Eggs tray,5,2.0,0.5,3.0,4.5
+2025-11-17,Sample CBD Mini-Mart,Eggs tray,1,5.0,1.75,4.0,0.75
+2025-11-24,Sample CBD Mini-Mart,Eggs tray,2,1.0,2.0,1.0,0.0
+2025-12-01,Sample CBD Mini-Mart,Eggs tray,3,2.0,2.5,1.0,0.5
+2025-12-08,Sample CBD Mini-Mart,Eggs tray,4,3.0,2.75,1.0,1.25
+2025-12-15,Sample CBD Mini-Mart,Eggs tray,4,4.0,2.5,0.0,1.5
+2025-12-22,Sample CBD Mini-Mart,Eggs tray,0,4.0,3.25,4.0,3.25
+2025-12-29,Sample CBD Mini-Mart,Eggs tray,1,0.0,2.75,1.0,1.75
+2025-10-20,Sample CBD Mini-Mart,Rice 2kg,1,2.0,0.5,1.0,0.5
+2025-10-27,Sample CBD Mini-Mart,Rice 2kg,2,1.0,0.75,1.0,1.25
+2025-11-03,Sample CBD Mini-Mart,Rice 2kg,2,2.0,1.25,0.0,0.75
+2025-11-10,Sample CBD Mini-Mart,Rice 2kg,1,2.0,1.75,1.0,0.75
+2025-11-17,Sample CBD Mini-Mart,Rice 2kg,5,1.0,1.5,4.0,3.5
+2025-11-24,Sample CBD Mini-Mart,Rice 2kg,1,5.0,2.5,4.0,1.5
+2025-12-01,Sample CBD Mini-Mart,Rice 2kg,1,1.0,2.25,0.0,1.25
+2025-12-08,Sample CBD Mini-Mart,Rice 2kg,6,1.0,2.0,5.0,4.0
+2025-12-15,Sample CBD Mini-Mart,Rice 2kg,1,6.0,3.25,5.0,2.25
+2025-12-22,Sample CBD Mini-Mart,Rice 2kg,2,1.0,2.25,1.0,0.25
+2025-12-29,Sample CBD Mini-Mart,Rice 2kg,1,2.0,2.5,1.0,1.5
+2025-10-20,Sample CBD Mini-Mart,Tea leaves 250g,0,0.0,1.0,0.0,1.0
+2025-10-27,Sample CBD Mini-Mart,Tea leaves 250g,1,0.0,0.75,1.0,0.25
+2025-11-03,Sample CBD Mini-Mart,Tea leaves 250g,4,1.0,0.5,3.0,3.5
+2025-11-10,Sample CBD Mini-Mart,Tea leaves 250g,0,4.0,1.25,4.0,1.25
+2025-11-17,Sample CBD Mini-Mart,Tea leaves 250g,0,0.0,1.25,0.0,1.25
+2025-11-24,Sample CBD Mini-Mart,Tea leaves 250g,1,0.0,1.25,1.0,0.25
+2025-12-01,Sample CBD Mini-Mart,Tea leaves 250g,2,1.0,1.25,1.0,0.75
+2025-12-08,Sample CBD Mini-Mart,Tea leaves 250g,0,2.0,0.75,2.0,0.75
+2025-12-15,Sample CBD Mini-Mart,Tea leaves 250g,2,0.0,0.75,2.0,1.25
+2025-12-22,Sample CBD Mini-Mart,Tea leaves 250g,0,2.0,1.25,2.0,1.25
+2025-12-29,Sample CBD Mini-Mart,Tea leaves 250g,0,0.0,1.0,0.0,1.0
+2025-10-20,Sample CBD Mini-Mart,Water 1.5L,2,1.0,1.75,1.0,0.25
+2025-10-27,Sample CBD Mini-Mart,Water 1.5L,1,2.0,1.5,1.0,0.5
+2025-11-03,Sample CBD Mini-Mart,Water 1.5L,2,1.0,1.75,1.0,0.25
+2025-11-10,Sample CBD Mini-Mart,Water 1.5L,1,2.0,1.5,1.0,0.5
+2025-11-17,Sample CBD Mini-Mart,Water 1.5L,1,1.0,1.5,0.0,0.5
+2025-11-24,Sample CBD Mini-Mart,Water 1.5L,0,1.0,1.25,1.0,1.25
+2025-12-01,Sample CBD Mini-Mart,Water 1.5L,2,0.0,1.0,2.0,1.0
+2025-12-08,Sample CBD Mini-Mart,Water 1.5L,1,2.0,1.0,1.0,0.0
+2025-12-15,Sample CBD Mini-Mart,Water 1.5L,3,1.0,1.0,2.0,2.0
+2025-12-22,Sample CBD Mini-Mart,Water 1.5L,2,3.0,1.5,1.0,0.5
+2025-12-29,Sample CBD Mini-Mart,Water 1.5L,5,2.0,2.0,3.0,3.0
+2025-10-20,Sample CBD Mini-Mart,Soap bar,0,3.0,0.75,3.0,0.75
+2025-10-27,Sample CBD Mini-Mart,Soap bar,0,0.0,0.75,0.0,0.75
+2025-11-03,Sample CBD Mini-Mart,Soap bar,0,0.0,0.75,0.0,0.75
+2025-11-10,Sample CBD Mini-Mart,Soap bar,0,0.0,0.75,0.0,0.75
+2025-11-17,Sample CBD Mini-Mart,Soap bar,1,0.0,0.0,1.0,1.0
+2025-11-24,Sample CBD Mini-Mart,Soap bar,0,1.0,0.25,1.0,0.25
+2025-12-01,Sample CBD Mini-Mart,Soap bar,0,0.0,0.25,0.0,0.25
+2025-12-08,Sample CBD Mini-Mart,Soap bar,0,0.0,0.25,0.0,0.25
+2025-12-15,Sample CBD Mini-Mart,Soap bar,0,0.0,0.25,0.0,0.25
+2025-12-22,Sample CBD Mini-Mart,Soap bar,0,0.0,0.0,0.0,0.0
+2025-12-29,Sample CBD Mini-Mart,Soap bar,0,0.0,0.0,0.0,0.0
+2025-10-20,Sample Ruiru Mini-Mart,Maize flour 2kg,2,5.0,4.25,3.0,2.25
+2025-10-27,Sample Ruiru Mini-Mart,Maize flour 2kg,4,2.0,3.5,2.0,0.5
+2025-11-03,Sample Ruiru Mini-Mart,Maize flour 2kg,10,4.0,3.25,6.0,6.75
+2025-11-10,Sample Ruiru Mini-Mart,Maize flour 2kg,2,10.0,5.25,8.0,3.25
+2025-11-17,Sample Ruiru Mini-Mart,Maize flour 2kg,3,2.0,4.5,1.0,1.5
+2025-11-24,Sample Ruiru Mini-Mart,Maize flour 2kg,2,3.0,4.75,1.0,2.75
+2025-12-01,Sample Ruiru Mini-Mart,Maize flour 2kg,6,2.0,4.25,4.0,1.75
+2025-12-08,Sample Ruiru Mini-Mart,Maize flour 2kg,2,6.0,3.25,4.0,1.25
+2025-12-15,Sample Ruiru Mini-Mart,Maize flour 2kg,2,2.0,3.25,0.0,1.25
+2025-12-22,Sample Ruiru Mini-Mart,Maize flour 2kg,10,2.0,3.0,8.0,7.0
+2025-12-29,Sample Ruiru Mini-Mart,Maize flour 2kg,1,10.0,5.0,9.0,4.0
+2025-10-20,Sample Ruiru Mini-Mart,Milk 1L,3,1.0,1.75,2.0,1.25
+2025-10-27,Sample Ruiru Mini-Mart,Milk 1L,3,3.0,2.0,0.0,1.0
+2025-11-03,Sample Ruiru Mini-Mart,Milk 1L,6,3.0,2.25,3.0,3.75
+2025-11-10,Sample Ruiru Mini-Mart,Milk 1L,3,6.0,3.25,3.0,0.25
+2025-11-17,Sample Ruiru Mini-Mart,Milk 1L,3,3.0,3.75,0.0,0.75
+2025-11-24,Sample Ruiru Mini-Mart,Milk 1L,6,3.0,3.75,3.0,2.25
+2025-12-01,Sample Ruiru Mini-Mart,Milk 1L,0,6.0,4.5,6.0,4.5
+2025-12-08,Sample Ruiru Mini-Mart,Milk 1L,6,0.0,3.0,6.0,3.0
+2025-12-15,Sample Ruiru Mini-Mart,Milk 1L,0,6.0,3.75,6.0,3.75
+2025-12-22,Sample Ruiru Mini-Mart,Milk 1L,7,0.0,3.0,7.0,4.0
+2025-12-29,Sample Ruiru Mini-Mart,Milk 1L,1,7.0,3.25,6.0,2.25
+2025-10-20,Sample Ruiru Mini-Mart,Bread loaf,1,0.0,2.5,1.0,1.5
+2025-10-27,Sample Ruiru Mini-Mart,Bread loaf,7,1.0,1.75,6.0,5.25
+2025-11-03,Sample Ruiru Mini-Mart,Bread loaf,5,7.0,2.25,2.0,2.75
+2025-11-10,Sample Ruiru Mini-Mart,Bread loaf,1,5.0,3.25,4.0,2.25
+2025-11-17,Sample Ruiru Mini-Mart,Bread loaf,3,1.0,3.5,2.0,0.5
+2025-11-24,Sample Ruiru Mini-Mart,Bread loaf,7,3.0,4.0,4.0,3.0
+2025-12-01,Sample Ruiru Mini-Mart,Bread loaf,4,7.0,4.0,3.0,0.0
+2025-12-08,Sample Ruiru Mini-Mart,Bread loaf,7,4.0,3.75,3.0,3.25
+2025-12-15,Sample Ruiru Mini-Mart,Bread loaf,0,7.0,5.25,7.0,5.25
+2025-12-22,Sample Ruiru Mini-Mart,Bread loaf,3,0.0,4.5,3.0,1.5
+2025-12-29,Sample Ruiru Mini-Mart,Bread loaf,1,3.0,3.5,2.0,2.5
+2025-10-20,Sample Ruiru Mini-Mart,Sugar 1kg,0,3.0,2.75,3.0,2.75
+2025-10-27,Sample Ruiru Mini-Mart,Sugar 1kg,1,0.0,2.25,1.0,1.25
+2025-11-03,Sample Ruiru Mini-Mart,Sugar 1kg,0,1.0,1.75,1.0,1.75
+2025-11-10,Sample Ruiru Mini-Mart,Sugar 1kg,3,0.0,1.0,3.0,2.0
+2025-11-17,Sample Ruiru Mini-Mart,Sugar 1kg,5,3.0,1.0,2.0,4.0
+2025-11-24,Sample Ruiru Mini-Mart,Sugar 1kg,0,5.0,2.25,5.0,2.25
+2025-12-01,Sample Ruiru Mini-Mart,Sugar 1kg,5,0.0,2.0,5.0,3.0
+2025-12-08,Sample Ruiru Mini-Mart,Sugar 1kg,1,5.0,3.25,4.0,2.25
+2025-12-15,Sample Ruiru Mini-Mart,Sugar 1kg,7,1.0,2.75,6.0,4.25
+2025-12-22,Sample Ruiru Mini-Mart,Sugar 1kg,2,7.0,3.25,5.0,1.25
+2025-12-29,Sample Ruiru Mini-Mart,Sugar 1kg,2,2.0,3.75,0.0,1.75
+2025-10-20,Sample Ruiru Mini-Mart,Cooking oil 1L,4,5.0,4.25,1.0,0.25
+2025-10-27,Sample Ruiru Mini-Mart,Cooking oil 1L,1,4.0,3.25,3.0,2.25
+2025-11-03,Sample Ruiru Mini-Mart,Cooking oil 1L,0,1.0,2.75,1.0,2.75
+2025-11-10,Sample Ruiru Mini-Mart,Cooking oil 1L,1,0.0,2.5,1.0,1.5
+2025-11-17,Sample Ruiru Mini-Mart,Cooking oil 1L,0,1.0,1.5,1.0,1.5
+2025-11-24,Sample Ruiru Mini-Mart,Cooking oil 1L,2,0.0,0.5,2.0,1.5
+2025-12-01,Sample Ruiru Mini-Mart,Cooking oil 1L,1,2.0,0.75,1.0,0.25
+2025-12-08,Sample Ruiru Mini-Mart,Cooking oil 1L,2,1.0,1.0,1.0,1.0
+2025-12-15,Sample Ruiru Mini-Mart,Cooking oil 1L,0,2.0,1.25,2.0,1.25
+2025-12-22,Sample Ruiru Mini-Mart,Cooking oil 1L,4,0.0,1.25,4.0,2.75
+2025-12-29,Sample Ruiru Mini-Mart,Cooking oil 1L,0,4.0,1.75,4.0,1.75
+2025-10-20,Sample Ruiru Mini-Mart,Eggs tray,0,1.0,0.75,1.0,0.75
+2025-10-27,Sample Ruiru Mini-Mart,Eggs tray,0,0.0,0.5,0.0,0.5
+2025-11-03,Sample Ruiru Mini-Mart,Eggs tray,0,0.0,0.5,0.0,0.5
+2025-11-10,Sample Ruiru Mini-Mart,Eggs tray,1,0.0,0.25,1.0,0.75
+2025-11-17,Sample Ruiru Mini-Mart,Eggs tray,2,1.0,0.25,1.0,1.75
+2025-11-24,Sample Ruiru Mini-Mart,Eggs tray,1,2.0,0.75,1.0,0.25
+2025-12-01,Sample Ruiru Mini-Mart,Eggs tray,1,1.0,1.0,0.0,0.0
+2025-12-08,Sample Ruiru Mini-Mart,Eggs tray,1,1.0,1.25,0.0,0.25
+2025-12-15,Sample Ruiru Mini-Mart,Eggs tray,3,1.0,1.25,2.0,1.75
+2025-12-22,Sample Ruiru Mini-Mart,Eggs tray,0,3.0,1.5,3.0,1.5
+2025-12-29,Sample Ruiru Mini-Mart,Eggs tray,1,0.0,1.25,1.0,0.25
+2025-10-20,Sample Ruiru Mini-Mart,Rice 2kg,1,0.0,1.25,1.0,0.25
+2025-10-27,Sample Ruiru Mini-Mart,Rice 2kg,7,1.0,1.25,6.0,5.75
+2025-11-03,Sample Ruiru Mini-Mart,Rice 2kg,2,7.0,2.0,5.0,0.0
+2025-11-10,Sample Ruiru Mini-Mart,Rice 2kg,0,2.0,2.5,2.0,2.5
+2025-11-17,Sample Ruiru Mini-Mart,Rice 2kg,1,0.0,2.5,1.0,1.5
+2025-11-24,Sample Ruiru Mini-Mart,Rice 2kg,1,1.0,2.5,0.0,1.5
+2025-12-01,Sample Ruiru Mini-Mart,Rice 2kg,0,1.0,1.0,1.0,1.0
+2025-12-08,Sample Ruiru Mini-Mart,Rice 2kg,0,0.0,0.5,0.0,0.5
+2025-12-15,Sample Ruiru Mini-Mart,Rice 2kg,5,0.0,0.5,5.0,4.5
+2025-12-22,Sample Ruiru Mini-Mart,Rice 2kg,2,5.0,1.5,3.0,0.5
+2025-12-29,Sample Ruiru Mini-Mart,Rice 2kg,0,2.0,1.75,2.0,1.75
+2025-10-20,Sample Ruiru Mini-Mart,Tea leaves 250g,1,3.0,2.0,2.0,1.0
+2025-10-27,Sample Ruiru Mini-Mart,Tea leaves 250g,0,1.0,2.0,1.0,2.0
+2025-11-03,Sample Ruiru Mini-Mart,Tea leaves 250g,0,0.0,1.75,0.0,1.75
+2025-11-10,Sample Ruiru Mini-Mart,Tea leaves 250g,1,0.0,1.0,1.0,0.0
+2025-11-17,Sample Ruiru Mini-Mart,Tea leaves 250g,2,1.0,0.5,1.0,1.5
+2025-11-24,Sample Ruiru Mini-Mart,Tea leaves 250g,0,2.0,0.75,2.0,0.75
+2025-12-01,Sample Ruiru Mini-Mart,Tea leaves 250g,0,0.0,0.75,0.0,0.75
+2025-12-08,Sample Ruiru Mini-Mart,Tea leaves 250g,1,0.0,0.75,1.0,0.25
+2025-12-15,Sample Ruiru Mini-Mart,Tea leaves 250g,0,1.0,0.75,1.0,0.75
+2025-12-22,Sample Ruiru Mini-Mart,Tea leaves 250g,0,0.0,0.25,0.0,0.25
+2025-12-29,Sample Ruiru Mini-Mart,Tea leaves 250g,0,0.0,0.25,0.0,0.25
+2025-10-20,Sample Ruiru Mini-Mart,Water 1.5L,6,3.0,2.0,3.0,4.0
+2025-10-27,Sample Ruiru Mini-Mart,Water 1.5L,0,6.0,3.0,6.0,3.0
+2025-11-03,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,3.0,0.0,3.0
+2025-11-10,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,2.25,0.0,2.25
+2025-11-17,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,1.5,0.0,1.5
+2025-11-24,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,0.0,0.0,0.0
+2025-12-01,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,0.0,0.0,0.0
+2025-12-08,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,0.0,0.0,0.0
+2025-12-15,Sample Ruiru Mini-Mart,Water 1.5L,0,0.0,0.0,0.0,0.0
+2025-12-22,Sample Ruiru Mini-Mart,Water 1.5L,4,0.0,0.0,4.0,4.0
+2025-12-29,Sample Ruiru Mini-Mart,Water 1.5L,0,4.0,1.0,4.0,1.0
+2025-10-20,Sample Ruiru Mini-Mart,Soap bar,0,3.0,1.0,3.0,1.0
+2025-10-27,Sample Ruiru Mini-Mart,Soap bar,0,0.0,1.0,0.0,1.0
+2025-11-03,Sample Ruiru Mini-Mart,Soap bar,0,0.0,1.0,0.0,1.0
+2025-11-10,Sample Ruiru Mini-Mart,Soap bar,2,0.0,0.75,2.0,1.25
+2025-11-17,Sample Ruiru Mini-Mart,Soap bar,0,2.0,0.5,2.0,0.5
+2025-11-24,Sample Ruiru Mini-Mart,Soap bar,4,0.0,0.5,4.0,3.5
+2025-12-01,Sample Ruiru Mini-Mart,Soap bar,0,4.0,1.5,4.0,1.5
+2025-12-08,Sample Ruiru Mini-Mart,Soap bar,0,0.0,1.5,0.0,1.5
+2025-12-15,Sample Ruiru Mini-Mart,Soap bar,3,0.0,1.0,3.0,2.0
+2025-12-22,Sample Ruiru Mini-Mart,Soap bar,0,3.0,1.75,3.0,1.75
+2025-12-29,Sample Ruiru Mini-Mart,Soap bar,0,0.0,0.75,0.0,0.75
