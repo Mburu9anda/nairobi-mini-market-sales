@@ -9,7 +9,7 @@ This project explores four practical questions:
 1. Which products and months brought in the most sales?
 2. How did the Nairobi CBD and Ruiru sample branches compare?
 3. How did sales vary by customer type and payment method?
-4. Did a simple weekly forecast perform better than a last-week baseline?
+4. Did a learned weekly forecast improve on simple baselines?
 
 ## Dataset overview
 
@@ -44,7 +44,7 @@ The reference file data/reference/knbs_county_population_2019.csv contains count
 | 3. Exploratory data analysis | Compared receipt values, months, weekdays, branches, products, categories, and customer types, then saved five findings. |
 | 4. SQL analysis | Prepared PostgreSQL scripts for staging, table building, joins, aggregations, product ranking, customer cohorts, and RFM segments. |
 | 5. Statistical analysis | Used Welch two-sample t-tests and 95% confidence intervals to compare promoted and non-promoted receipts, and M-Pesa and cash receipts. |
-| 6. Predictive model | Compared a last-week baseline with a four-week moving-average forecast using a time-based validation split. |
+| 6. Predictive model | Compared a last-week baseline and four-week average baseline with a trained linear regression using past-sales, calendar, branch, and product features on the same time-based validation weeks. |
 | 7. Dashboard and storytelling | Built a three-page Power BI report with a sales overview, interactive slicers, forecast validation, and a historical sample forecast table. |
 
 Milestone notes and step-by-step explanations are in the docs/ folder.
@@ -57,11 +57,13 @@ Milestone notes and step-by-step explanations are in the docs/ folder.
 - **Customer type:** Loyalty-member sales were **KES 164,075.25**, about **43.7%** of net sales. Walk-in / not identified sales are not a count of individual people.
 - **Promotion test:** Promoted receipts had a higher average gross value by **KES 50.60** in this sample (95% CI: KES 10.75 to KES 90.45; p = 0.0129). This association does not prove that promotions caused the difference.
 - **Payment test:** The M-Pesa versus cash difference in average net receipt value was **KES 4.20** (95% CI: KES -35.20 to KES 43.60; p = 0.8345). The sample does not provide clear evidence of a difference.
-- **Forecast validation:** The four-week average had lower MAE than the last-week baseline (**1.73** versus **2.20 units**) and lower WAPE (**82.0%** versus **104.5%**). The remaining error is high, so the model is only a demonstration of the forecasting process.
+- **Forecast validation:** On the same 11 later weeks, a trained linear regression had MAE **1.54 units** and WAPE **72.9%**. It beat the four-week average baseline (MAE **1.73**, WAPE **82.0%**) and last-week baseline (MAE **2.20**, WAPE **104.5%**). The remaining error is high, so this is not ready for restocking decisions.
 
 ## Power BI dashboard
 
 The Power BI report has a Sales page with KPI cards, monthly sales, product and branch comparisons, customer-type sales, and slicers for month, payment method, category, and branch. The Forecast Performance page compares actual weekly units with two forecasts and includes branch and product filters. The separate sample forecast table shows a projection for the week starting **5 January 2026**. That date is now in the past, so the table is a historical demonstration, not a current restocking recommendation.
+
+The saved Power BI forecast page shows the two original baseline methods. The newer regression comparison is documented in the forecasting notebook and evaluation report; the dashboard screenshot has not yet been updated to show that third method.
 
 ### Sales overview
 
@@ -79,12 +81,28 @@ The Power BI file is reports/nairobi_mini_market_dashboard.pbix.
 
 ## Run the Python notebooks
 
+### Set up Python
+
+From the repository root, create and activate a virtual environment, then install the listed packages:
+
+```bash
+python -m venv .venv
+# Windows in PowerShell
+source .venv/Scripts/activate
+# macOS or Linux instead
+# source .venv/bin/activate
+python -m pip install pip
+python -m pip install -r requirements.txt
+```
+
+In Jupyter, select the Python kernel from this `.venv` environment. The notebooks use pandas and NumPy for data work, plus Matplotlib and SciPy for the analysis.
+
 Run the notebooks in this order:
 
 1. notebooks/data_preparation.ipynb - creates data/processed/clean_sales_2025.csv and reports/quality_report.csv.
 2. notebooks/eda.ipynb - creates reports/findings.txt.
 3. notebooks/statistical_analysis.ipynb - creates reports/results.md.
-4. notebooks/demand_forecast.ipynb - creates reports/evaluation.md, reports/validation_predictions.csv, and reports/next_week_forecast.csv.
+4. notebooks/demand_forecast.ipynb - compares the two baselines with a trained linear regression and creates reports/evaluation.md, reports/validation_predictions.csv, and reports/next_week_forecast.csv.
 
 The original raw files remain in data/raw/. Running data preparation again rebuilds the cleaned file and its quality report.
 
@@ -107,6 +125,7 @@ Reference checks are in reports/sql_results.md. Keep database passwords and conn
 - notebooks/ - preparation, EDA, statistical analysis, and forecasting notebooks.
 - sql/ - PostgreSQL setup and analysis scripts.
 - reports/ - analysis outputs, forecast files, Power BI report, and dashboard screenshots.
+- [Project presentation deck](presentation/nairobi_mini_market_presentation.pptx) - problem, data, sales findings, statistical tests, forecast comparison, dashboard, and recommendations.
 - docs/ - milestone guides and explanations.
 - src/ - synthetic data generator.
 

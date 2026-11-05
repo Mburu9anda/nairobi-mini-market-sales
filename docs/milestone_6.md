@@ -2,48 +2,38 @@
 
 ## Goal
 
-We forecast weekly unit sales for each product at each of the two sample branches. The purpose is to see whether a small forecasting method can improve on a basic guess.
+We forecast weekly unit sales for each product at the two sample branches. The purpose is to compare simple methods with a trained model, not to create an automatic order recommendation. The data is synthetic.
 
-## The two forecasts
+## Methods compared
 
-- **Baseline:** next week's demand will equal last week's demand.
-- **Forecast model:** next week's demand will equal the average of the previous four weeks.
+- **Last-week baseline:** use the previous week’s sales as the next-week forecast.
+- **Four-week average baseline:** average the previous four weeks. This is another baseline, not a trained model.
+- **Learned model:** use one linear regression trained from past weekly sales. Its inputs are the previous four weeks, their average, week of year, branch and product. NumPy calculates the weights from the training data. Predictions below zero are set to zero.
 
-## How the time split works
+The first 42 of 53 weeks are history. After the four weeks needed for lag features, the model trains on 760 product-branch-week rows. We compare all three methods on the same final 11 weeks (20 October to 29 December 2025). We do not shuffle weeks. Each forecast uses completed earlier weeks only.
 
-Sales product lines are added together into weekly units for each product and branch. Weeks with no sales are filled with zero so quiet weeks remain in the analysis. The cleaned data creates **53 calendar weeks**, including partial weeks at the start and end of 2025.
-
-The notebook keeps the first **42 weeks** as history and uses the final **11 weeks** (20 October to 29 December 2025) as validation. It does not shuffle the data. For each validation week, both forecasts use earlier actual weeks only. After a validation week has passed, its actual sales can be used to forecast the following week. This is a one-week-ahead process.
-
-## How we measure performance
-
-- **MAE (mean absolute error):** average number of units missed per product, branch, and week. Lower is better.
-- **WAPE (weighted absolute percentage error):** total absolute error divided by total units actually sold. Lower is better. We use WAPE rather than MAPE because some weeks have zero sales.
-- **Bias:** average forecast minus actual units. A positive value means slight over-forecasting; a negative value means under-forecasting.
-
-## Current validation results
+## Validation results
 
 | Forecast | MAE (units) | WAPE | Bias (units) |
 | --- | ---: | ---: | ---: |
 | Last-week baseline | 2.20 | 104.5% | 0.15 |
-| Previous four-week average | 1.73 | 82.0% | 0.12 |
+| Four-week average baseline | 1.73 | 82.0% | 0.12 |
+| Learned linear regression | 1.54 | 72.9% | 0.09 |
 
-The four-week average has lower error than the baseline in these 11 validation weeks. Its MAE is about **21.5% lower**, but its WAPE is still **82.0%**, so the forecast can still be far from actual weekly sales.
+The regression beat the four-week average on these weeks. Its MAE was about 11% lower, and WAPE was 9.1 percentage points lower. WAPE is still high, so the model is not ready to guide real stock orders.
 
 ## What the model gets wrong
 
-The largest misses in the validation period include weeks when Sample Ruiru Mini-Mart sold 10 units of maize flour 2kg after recent weeks were quieter; the four-week average predicted 3 units. It also predicted some bread sales in weeks when none were recorded. The average smooths demand, so it reacts slowly to sudden spikes and may over-forecast a quiet week.
-
-The full list is in `reports/evaluation.md`. Every validation prediction is saved in `reports/validation_predictions.csv`. The notebook also saves an out-of-sample projection for the week immediately after the 2025 data period in `reports/next_week_forecast.csv`.
+It still misses sudden demand spikes. For example, the Ruiru branch sold 10 units of maize flour 2kg in the weeks starting 3 November and 22 December, while the regression predicted about 3.75 and 3.54 units. In the final validation week, actual sales across all product-branch pairs were 20 units while the model predicted about 43.5. It was too slow to respond when demand fell.
 
 ## How to run and check it
 
-1. Run all cells in `notebooks/data_preparation.ipynb` first.
+1. Run `notebooks/data_preparation.ipynb` first.
 2. Open `notebooks/demand_forecast.ipynb` and choose **Run All**.
-3. It reports 53 weeks, 42 history weeks, 11 validation weeks, and that the four-week average has lower MAE and WAPE than the baseline on the current data.
+3. Check the evaluation table in the notebook and `reports/evaluation.md`. All three methods should be scored on the same 11 weeks.
 
-The notebook code was run against the current cleaned file. It produced 1,060 weekly rows (20 product-branch combinations across 53 weeks) and saved the evaluation, validation predictions, and post-sample projection. The projection is for the week starting 5 January 2026, immediately after 2025.
+The notebook saves `reports/validation_predictions.csv`, `reports/evaluation.md`, and `reports/next_week_forecast.csv`. The last file includes a historical forecast for the week starting 5 January 2026, immediately after the 2025 data. That date has passed; it is an example of the process, not a current stock recommendation.
 
-## Conclusion
+## Recommendation
 
-I forecast weekly units for each product and branch. I compared the previous week's sales with a four-week moving average, using the earlier weeks as history and holding out the final 11 weeks for validation. The average improved MAE from 2.20 to 1.73 units, but WAPE remained high at 82%, and it missed sudden demand spikes. The data is synthetic, so I present this as a method demonstration.
+For an actual Nairobi shop, collect real point-of-sale and stockout data over a longer period, then compare forecasts against what the shop sold. Do not use this synthetic example to place orders.

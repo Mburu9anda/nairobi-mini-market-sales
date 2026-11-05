@@ -71,4 +71,8 @@ KPI cards:
 
 ## Saved the milestone evidence
 
-Save the Power BI file as `reports/nairobi_mini_market_dashboard.pbix`. Saved screenshots  of the finished reports pages are as follows; `reports/sales_dashboard.png`, `reports/Next_week_forecast_dashboard.png`, `reports/forecast_performance_dashboard.png`.
+Save the Power BI file as `reports/nairobi_mini_market_dashboard.pbix`. Saved screenshots  of the finished reports pages are as follows; `reports/Sales_dashboard.png`, `reports/Next_week_forecast_dashboard.png`, and `reports/Forecast_performance_dashboard.png`.
+
+## Forecast model update
+
+The saved Power BI forecast page compares the last-week baseline with the four-week average. The learned linear regression was added later and is evaluated in `notebooks/demand_forecast.ipynb` and `reports/evaluation.md`; it is not yet shown as a third forecast on the Power BI page.

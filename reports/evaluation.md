@@ -4,34 +4,39 @@ This forecast uses synthetic weekly sales data. It is a learning example, not an
 
 ## Forecast setup
 
-Training/history: 42 earlier weeks. Validation: 11 later weeks, from 20 Oct 2025 to 29 Dec 2025.
-The baseline uses the previous week. The model uses the average of the previous four weeks. Both use past actual sales only for each one-week-ahead forecast.
+Training/history: 42 earlier weeks (760 product-branch-week rows used for training after lag features). Validation: 11 later weeks, from 20 Oct 2025 to 29 Dec 2025.
+Each method predicts one week ahead. The validation week that has finished is available as past data for the next prediction.
+The learned model is one linear regression using four sales lags, the average of those lags, a repeating week-of-year pattern, and branch/product indicators. Negative predictions are set to zero.
 
-## Validation metrics
+## Validation metrics on the same 11 weeks
 
 | Forecast | MAE (units) | WAPE | Bias (units) |
 | --- | ---: | ---: | ---: |
 | Last-week baseline | 2.20 | 104.5% | 0.15 |
-| Four-week average model | 1.73 | 82.0% | 0.12 |
+| Four-week average baseline | 1.73 | 82.0% | 0.12 |
+| Learned linear regression | 1.54 | 72.9% | 0.09 |
 
 ## Conclusion
 
-The four-week average performed better than the last-week baseline on the validation weeks. It missed by 1.73 units per product-branch-week on average, compared with 2.20 for the baseline.
+The trained linear regression beat the four-week average on the same validation weeks. MAE fell from 1.73 to 1.54 units (11.0% lower). WAPE fell from 82.0% to 72.9%. However, the remaining error is still high for restocking.
+WAPE of the learned model is still high: on these validation rows, the total absolute error is about 72.9% of actual units sold. Use the result to compare methods, not to set real shop orders.
 
-## Next-week forecast
+## What the learned model gets wrong
 
-The four-week average forecast for the week starting 05 Jan 2026 was created using all available history.
-The product-by-branch values are saved in reports/next_week_forecast.csv.
+The largest misses include sudden demand spikes. For example, the Ruiru branch sold 10 units of maize flour 2kg in the weeks starting 3 November and 22 December, while the regression predicted about 3.75 and 3.54 units. In the final validation week, total actual sales were 20 units versus 43.5 predicted units, so the model also stayed too high after demand fell.
 
-## Largest model misses
+Largest individual product-branch-week misses:
 
 ```text
-week_start             store_name    product_name  units_sold  four_week_average_forecast miss_direction  average_absolute_error
-2025-12-22 Sample Ruiru Mini-Mart Maize flour 2kg          10                        3.00 under-forecast                    7.00
-2025-11-03 Sample Ruiru Mini-Mart Maize flour 2kg          10                        3.25 under-forecast                    6.75
-2025-10-27 Sample Ruiru Mini-Mart        Rice 2kg           7                        1.25 under-forecast                    5.75
-2025-12-15 Sample Ruiru Mini-Mart      Bread loaf           0                        5.25  over-forecast                    5.25
-2025-10-27 Sample Ruiru Mini-Mart      Bread loaf           7                        1.75 under-forecast                    5.25
+week_start             store_name    product_name  units_sold  linear_regression_forecast miss_direction  linear_regression_forecast_absolute_error
+2025-12-22 Sample Ruiru Mini-Mart Maize flour 2kg          10                        3.54 under-forecast                                       6.46
+2025-11-03 Sample Ruiru Mini-Mart Maize flour 2kg          10                        3.75 under-forecast                                       6.25
+2025-10-27 Sample Ruiru Mini-Mart        Rice 2kg           7                        1.33 under-forecast                                       5.67
+2025-12-22   Sample CBD Mini-Mart       Sugar 1kg           8                        2.64 under-forecast                                       5.36
+2025-12-08   Sample CBD Mini-Mart        Rice 2kg           6                        1.17 under-forecast                                       4.83
 ```
 
-The model smooths demand, so it can miss sudden spikes and can forecast sales in a week that turns out quiet. The validation covers only the final part of one synthetic year, so performance may differ in another year or a real store.
+## Historical post-sample forecast
+
+The saved example is for the week starting 05 Jan 2026, immediately after the 2025 sample. It is historical now. The CSV includes both baselines and the learned regression forecast.
+A real restocking model should be checked against actual point-of-sale and stockout data over more history before anyone uses it for orders.
